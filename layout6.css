@@ -11,7 +11,7 @@ main{
 }
 header{
     flex-grow: 1;
-    background-color: blue;
+    background-color: rgb(20, 20, 101);
     display: flex;
     flex-direction: row;
 }
@@ -46,9 +46,11 @@ section{
 }
 .t{
     flex-grow: 2;
+    background-color: rgb(137, 34, 34);
 }
-tr{
+.tr{
     flex-grow: 2;
+
 }
 
 footer{
