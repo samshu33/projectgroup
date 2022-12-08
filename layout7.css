@@ -17,7 +17,7 @@ header{
 
 section{
     flex-grow: 6;
-    margin: 20px 20px;
+    margin: 20px 21px;
     display: flex;
     flex-direction: row;
 }
