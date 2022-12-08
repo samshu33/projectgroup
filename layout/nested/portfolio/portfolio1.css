@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    flex-basis: 20%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    height: 100%;
+}
+.menu{
+    flex-basis: 60%;
+}
+.contact{
+    flex-basis: 20%;
+}
+.menu ul{
+    display: flex;
+    position: relative;
+    top: 45px;
+    left: 150px;
+    list-style: none;
+    font-size: 25px;
+}
+.menu ul li{
+    margin: 15px;
+  
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu ul li :hover{
+    color: red;
+}
+.contact button{
+    height: 35px;
+    width: 130px;
+    font-size: 20px;
+    margin-top: 50px;
+    background-color: aqua;
+    font-family: cursive;
+    cursor: pointer;
+    border-top: 4px solid white;
+    border-left: 3px solid white;
+    border-radius: 25px;
+
+}
+
+section{
+    flex-basis: 80%;
+    background-color: turquoise;
+    display: flex;
+    flex-direction: row;
+}
+.one{
+    flex-basis: 40%;
+    background-color: black;
+}
+.two{
+    flex-basis: 40%;
+    background-color: rgb(92, 27, 27);
+}
+.three{
+    flex-basis: 40%;
+    background-color: black;
+}
