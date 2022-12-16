@@ -1,0 +1,56 @@
+*{
+    padding: 10;
+    margin: 10;
+}
+main{
+    justify-content: center;
+    display: flex;
+    background-color: violet;
+    /* height: 100vh; */
+}
+aside{
+    background-color: aqua;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-right: 2px solid black;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    
+}
+.logo{
+    flex-grow: 1; 
+ 
+      
+}
+
+aside .name{
+    font-size:2em;
+
+    color: tomato;
+    font-family: cursive;
+}
+.menu{
+    flex-grow: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu li{
+    margin-top: 50px;
+    list-style: none;
+    font-size: 25px;
+
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    
+}
+article{
+    flex-grow: 6;
+    background-color: violet;
+}

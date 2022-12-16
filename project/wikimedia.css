@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-direction: row;
+
+   flex-wrap: wrap;
+}
+aside{
+    background-color:violet;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    flex-basis: 100px;
+    /* flex-direction: column; */
+    margin: 0px 5px 10px 10px;
+  
+   
+    
+}
+.logo{
+    flex-grow: 1;
+     display: flex;
+    
+     flex-basis: 100px; 
+    justify-content: center;
+   
+    justify-content: center;
+
+
+}
+.logo img{
+    max-width: 300px;
+    flex-basis: 100px;
+   padding: 10px;
+   margin-top: 20px;
+    display: flex;   
+  
+}
+.name{
+    font-size: 30px;
+    display: inline-block block;
+    text-transform:capitalize;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.menu{
+    flex-grow: 8;
+    
+    
+}
+.menu li{
+    text-align: center;
+    list-style: none;
+    margin: 10px;
+    font-size: 30px;
+}
+.menu li a{
+    text-decoration: none;
+}
+article{
+    background-color:lightslategray;
+    flex-grow: 8;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 500px;
+    margin: 0px 10px 10px 10px;
+
+}
+.signup{
+    display: flex;
+    justify-content: flex-end;
+}
+.signup li{
+    list-style: none;
+    padding: 15px;
+    font-size: 20px;
+    
+}
+.signup li :hover{
+    color:pink;
+    font-family: cursive;
+}
+.signup li a{
+    text-decoration: none;
+    color: yellow; 
+
+}
+.menu2{
+    display: flex;
+    border-bottom: 2px white solid;
+     /* flex-direction: column; */
+    justify-content: space-between;
+    background-color: white;
+    flex-wrap: wrap;
+
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 18px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+    
+}
+.left li{
+    list-style: none ;
+    padding: 10px;
+    border-style: solid;
+    border-top: 0px ;
+    margin: 5px;
+    border-radius: 9px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+.left li a{
+    text-decoration: none;
+    color: black;
+}
+.right{
+    display: flex;
+    font-size: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+.right li{
+    list-style: none ;
+    margin: 5px;
+    
+}
+input{
+    background-color: red;
+    border-radius: 20px;
+
+}
+input:hover{
+    background-color: pink;
+    flex-basis: 100px;
+    /* min-width: 300px; */
+}
+.right li a{
+    text-decoration: none;
+    color: black;
+}
+.title
+{
+    border-bottom: 2px white solid;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+    
+}
+.title h1{
+     font-size: 2em;
+     margin-top: 1rem;
+     margin-left: 1em;
+     text-transform: uppercase;
+     flex-wrap: wrap;
+     display: flex;
+     justify-content: center;
+   
+
+}
+.title h3{
+   font-size: 2em; 
+  
+   text-align: center;
+  
+   margin: 10px;
+   
+}
+.paraall{
+    background-color: aliceblue;
+} */
