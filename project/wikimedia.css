@@ -2,41 +2,36 @@
     margin: 0;
     padding: 0;
 }
+
 main{
     display: flex;
     flex-direction: row;
-
+    
    flex-wrap: wrap;
 }
 aside{
     background-color:violet;
-    flex-grow: 1;
+    flex-grow: 2;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     display: flex;
-    flex-basis: 100px;
-    /* flex-direction: column; */
-    margin: 0px 5px 10px 10px;
-  
-   
-    
+    flex-basis: 300px;
+    margin: 5px 5px 5px 5px;    
 }
 .logo{
-    flex-grow: 1;
+    flex-grow: 2;
      display: flex;
-    
-     flex-basis: 100px; 
+    flex-basis: 100px; 
     justify-content: center;
-   
     justify-content: center;
-
-
 }
 .logo img{
-    max-width: 300px;
+    max-width: 420px;
     flex-basis: 100px;
-   padding: 10px;
+   padding: 20px;
    margin-top: 20px;
+   margin-right: 20px;
     display: flex;   
   
 }
@@ -51,11 +46,6 @@ aside{
     margin-bottom: 20px;
 }
 
-.menu{
-    flex-grow: 8;
-    
-    
-}
 .menu li{
     text-align: center;
     list-style: none;
@@ -66,7 +56,7 @@ aside{
     text-decoration: none;
 }
 article{
-    background-color:lightslategray;
+    
     flex-grow: 8;
     flex-wrap: wrap;
     display: flex;
@@ -85,23 +75,26 @@ article{
     font-size: 20px;
     
 }
-.signup li :hover{
-    color:pink;
-    font-family: cursive;
-}
+
 .signup li a{
     text-decoration: none;
-    color: yellow; 
+    color: red; 
 
 }
+/* .signup #sign li a{
+    display: none;
+}
+.signup #sign li a:hover{
+    display: flex;
+} */
 .menu2{
     display: flex;
     border-bottom: 2px white solid;
-     /* flex-direction: column; */
+     flex-direction: row;
     justify-content: space-between;
     background-color: white;
     flex-wrap: wrap;
-
+   
 }
 .left{
     display: flex;
@@ -110,6 +103,8 @@ article{
     font-size: 18px;
     flex-wrap: wrap;
     margin-top: 10px;
+    flex-basis: 200px;
+    
     
     
 }
@@ -132,6 +127,7 @@ article{
 .right{
     display: flex;
     font-size: 20px;
+    flex-basis: 400px;
     flex-wrap: wrap;
     margin-top: 15px;
     justify-content: space-around;
@@ -158,6 +154,7 @@ input:hover{
 .title
 {
     border-bottom: 2px white solid;
+    background-color: yellowgreen;
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
@@ -177,12 +174,256 @@ input:hover{
 }
 .title h3{
    font-size: 2em; 
-  
    text-align: center;
-  
    margin: 10px;
    
 }
-.paraall{
-    background-color: aliceblue;
-} */
+.paragraph{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:space-between;
+}
+.para{
+    text-align: justify;
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+.paraimg{
+ 
+    flex-grow: 2;
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-content: center; */
+    justify-items:center ;
+   
+
+}
+.paraimg img{
+    border-radius: 15px;
+}
+
+
+
+
+
+
+/* media query start */
+@media all and (max-width:300px){
+    .name h2{
+        color: black;
+        background-color: aqua;
+        text-transform: uppercase;
+        text-shadow: 5px 5px 5px yellow;
+        
+    }
+    .menu li{
+        font-size: 70px;
+        text-decoration:overline;
+    }
+    .menu li a{
+        display: flex;
+        justify-content: center;
+        color: black;
+        border-radius: 20px;
+        border: 5px solid red;
+        background-color: tomato;
+    }
+    .signup{
+      
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    
+    }
+    .signup li{
+        background-color: rgb(50, 39, 87);
+        font-size: 35px;
+        text-transform: uppercase;
+        margin: 15px;
+
+    }
+    .signup li a:hover{
+        background-color: rgb(156, 6, 28);
+        color: yellow;
+        font-family: cursive;
+    }
+    .left li{
+        display: flex;
+    
+        background-color: blue;
+    }
+    .left{
+        flex-direction: column;
+        margin-left: 130px;
+        
+    }
+    .right li a{
+        font-size: 35px;
+        
+    }
+    .right{
+        margin-left: 29px;
+    
+    }
+    .right li a:hover{
+        font-size: 50px;
+        color: rgb(87, 4, 87);
+     align-content: space-between;
+    }
+    .right input{
+        background-color: aliceblue;
+        height: 30px;
+        width: 260px;
+        text-align: center;
+        font-size: 25px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .right input:hover{
+        background-color: turquoise;
+    }
+    .title{
+        flex-direction: column;
+        font-size: 20px;
+        text-align: center;
+
+    }
+    .title h1{
+        margin-right: 30px;                
+    }
+    .para{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    
+}
+@media screen and (min-width:300px) and (max-width:700px){
+    .name h2{
+        background-color:red;
+        color: gold;   
+    }
+    .para{
+        font-size: 25px;
+        margin: 30px;
+    }
+    .right{
+        margin-left: 40px;
+        font-size: 25px;
+    }
+    .right input{
+        height: 35px;
+        width: 300px;
+        text-align: center;
+        font-size: 27px;
+    }
+
+}
+@media all and (min-width:700px) and (max-width:975px){
+    .name h2{
+        background-color:blueviolet;
+        font-size: 60px;
+    }
+    .signup{
+        justify-content: center;
+        
+    }
+    .signup li{
+        font-size: 25px;
+        background-color: black;
+        margin: 10px;
+        border-radius: 50px;
+    }
+    .left li a{
+        font-size: 25px;
+        flex-direction: row;
+    }
+    .right{
+        font-size: 30px;
+    }
+    .right input {
+        font-size: 30px;
+        font-style:italic;
+        
+    }
+    .title h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    .title{
+        flex-direction: column;
+    }
+   .para{
+    font-size: 30px;
+    margin: 30px;
+    
+   }
+   .paraimg img{
+    height: 400px;
+    width: 550px;
+   }
+}
+@media all and (min-width:975px) and (max-width:1009px){
+    .name h2{
+        background-color:rgb(57, 57, 42);
+        font-size: 60px;
+        height: 80px;
+
+      } 
+    .menu li{
+        font-size: 45px;
+        font-family: cursive;
+        text-transform: uppercase;
+
+    }
+    .menu li a{
+        color: black;
+    }
+    .signup {
+        background-color: black;
+        font-size: 35px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .signup li a{
+        font-size: 30px;
+        margin: 10px;
+
+    }
+    .menu2{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .right li{
+        font-size: 20px;
+    }
+    .para{
+        font-size: 30px;
+        padding: 10px;
+
+    }
+    .title h1{
+        font-size: 45px;
+    }
+    .title{
+        flex-direction: column;
+    } 
+}
+@media all and (min-width:1009px) and (max-width:1600px){
+    .name h2{
+        background-color:orange;
+        font-size: 60px;
+        height: 80px;
+
+      }
+      .logo img{
+        height: 400px;
+      }
+    }
+
+
+
+  
