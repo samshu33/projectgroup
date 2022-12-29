@@ -132,11 +132,12 @@ article{
     margin-top: 15px;
     justify-content: space-around;
 }
-.right li{
+.right li {
     list-style: none ;
     margin: 5px;
-    
-}
+    border-bottom:2px solid red ;
+ }
+
 input{
     background-color: red;
     border-radius: 20px;

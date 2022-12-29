@@ -1,0 +1,29 @@
+.one{
+    list-style: none;
+    display:flex;
+    background-color: violet;
+    
+}
+.one li{
+    margin: 30px;
+    font-size: 35px;
+    
+}
+.one li a{
+    text-decoration: none;
+    color: red;
+}
+.one ul {
+    display: none;
+    list-style: none;
+
+}
+.one ul li a{
+     color:white;
+     font-size: 25px;
+    
+
+} 
+.one ul li a:hover ul {
+    display: flex;
+}

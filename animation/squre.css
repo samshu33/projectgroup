@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(23, 7, 126);
+    
+}
+p{
+    position: relative;
+    top: 105px;
+    left: 159px;
+    font-size: 15px;
+    display: flex;
+    color: red;
+}
+
+span i{
+    position: relative;
+    top: 65px;
+    
+    left: 25px;
+    font-family: cursive;
+    font-size: 42px;
+    text-transform: uppercase;
+    
+    
+}
+span i b{
+    position: relative;
+    top: 30px;
+    left: 15px;
+    font-size: 40px;
+    
+}
+.cube{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 5.5s linear infinite;
+}
+span .one img{
+    height: 300px;
+    width: 300px;
+    border: 4px solid rgb(14, 14, 1);
+}
+span .two img{
+    height: 300px;
+    width: 300px;
+    border: 5px solid rgb(79, 139, 5);
+}
+span .three img{
+    height: 300px;
+    width: 300px;
+    border: 4px solid red;
+}
+@keyframes animate{
+    0%{
+        transform: rotateX(-10deg) rotateY(0deg);
+
+    }
+    100%{
+        transform: rotateX(-10deg) rotateY(360deg);
+    }
+}
+.cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(black,white);
+    transform: rotateY(calc(90deg * var(--i)))translateZ(150px);
+
+
+}
+.top
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:300px;
+    height:300px;
+    background:white ;
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+.top::before{
+     content:'' ;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 300px;
+     height: 300px;
+     background: black;
+     transform: translateZ(-380px);
+     filter: blur(20px);
+     box-shadow: 0 0 120px white,
+     0 0 200px white,
+     0 0 300px white,
+     0 0 400px yellow,
+     0 0 500px white;
+
+}
